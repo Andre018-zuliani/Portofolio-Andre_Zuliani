@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #eaf0ff;
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(165, 180, 252, 0.42) 0%, transparent 38%),
+      radial-gradient(circle at 88% 14%, rgba(196, 181, 253, 0.38) 0%, transparent 36%),
+      radial-gradient(circle at 50% 62%, rgba(186, 230, 253, 0.32) 0%, transparent 45%);
+    background-attachment: fixed;
+    color: #191744;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Tactile 3D Soft Claymorphism System — Zero Black Shadows */
+
+/* Floating White Pill Nav with Light-Blue Clay Shadow */
+.clay-nav-pill {
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8ff 100%);
+  box-shadow:
+    0 16px 34px -6px rgba(96, 135, 255, 0.30),
+    0 6px 14px -2px rgba(129, 164, 255, 0.22),
+    inset 0 3px 6px rgba(255, 255, 255, 0.98),
+    inset 0 -5px 10px rgba(191, 211, 255, 0.55);
+}
+
+/* Soft White Clay Surface */
+.clay-white {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f7ff 100%);
+  box-shadow:
+    0 20px 38px -10px rgba(99, 132, 244, 0.24),
+    0 8px 18px -4px rgba(129, 156, 248, 0.16),
+    inset 0 4px 8px rgba(255, 255, 255, 1),
+    inset 0 -7px 14px rgba(203, 216, 255, 0.62);
+}
+
+/* Subtle Lavender Recessed Clay Tray (for segmented controls) */
+.clay-recessed {
+  background: #dde6ff;
+  box-shadow:
+    inset 0 4px 9px rgba(110, 134, 214, 0.28),
+    inset 0 -3px 6px rgba(255, 255, 255, 0.85),
+    0 2px 6px rgba(255, 255, 255, 0.7);
+}
+
+/* Category 1: Pink Clay Card (Desain, VR & Produk) */
+.clay-card-pink {
+  background: linear-gradient(160deg, #fb4b93 0%, #db2777 100%);
+  box-shadow:
+    0 22px 38px -8px rgba(225, 39, 120, 0.48),
+    0 10px 18px -4px rgba(244, 63, 140, 0.34),
+    inset 0 7px 13px rgba(255, 255, 255, 0.42),
+    inset 0 -9px 16px rgba(131, 24, 67, 0.34);
+  transition: box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.clay-card-pink:hover {
+  box-shadow:
+    0 30px 50px -8px rgba(225, 39, 120, 0.58),
+    0 14px 24px -4px rgba(244, 63, 140, 0.40),
+    inset 0 7px 14px rgba(255, 255, 255, 0.50),
+    inset 0 -9px 16px rgba(131, 24, 67, 0.34);
+}
+
+/* Category 2: Purple Clay Card (AI & Data) */
+.clay-card-purple {
+  background: linear-gradient(160deg, #9353ff 0%, #6d28d9 100%);
+  box-shadow:
+    0 22px 38px -8px rgba(109, 40, 217, 0.48),
+    0 10px 18px -4px rgba(139, 92, 246, 0.34),
+    inset 0 7px 13px rgba(255, 255, 255, 0.40),
+    inset 0 -9px 16px rgba(59, 7, 100, 0.36);
+  transition: box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.clay-card-purple:hover {
+  box-shadow:
+    0 30px 50px -8px rgba(109, 40, 217, 0.58),
+    0 14px 24px -4px rgba(139, 92, 246, 0.40),
+    inset 0 7px 14px rgba(255, 255, 255, 0.48),
+    inset 0 -9px 16px rgba(59, 7, 100, 0.36);
+}
+
+/* Category 3: Tosca Clay Card (Dev & QA Engineering) */
+.clay-card-tosca {
+  background: linear-gradient(160deg, #16c4b3 0%, #0b8478 100%);
+  box-shadow:
+    0 22px 38px -8px rgba(13, 148, 136, 0.46),
+    0 10px 18px -4px rgba(20, 184, 166, 0.32),
+    inset 0 7px 13px rgba(255, 255, 255, 0.44),
+    inset 0 -9px 16px rgba(13, 74, 69, 0.34);
+  transition: box-shadow 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.clay-card-tosca:hover {
+  box-shadow:
+    0 30px 50px -8px rgba(13, 148, 136, 0.56),
+    0 14px 24px -4px rgba(20, 184, 166, 0.40),
+    inset 0 7px 14px rgba(255, 255, 255, 0.50),
+    inset 0 -9px 16px rgba(13, 74, 69, 0.34);
+}
+
+/* Primary Purple Clay CTA Button */
+.clay-btn-purple {
+  background: linear-gradient(180deg, #8b5cf6 0%, #6d28d9 100%);
+  box-shadow:
+    0 12px 24px -4px rgba(109, 40, 217, 0.44),
+    inset 0 4px 7px rgba(255, 255, 255, 0.42),
+    inset 0 -5px 9px rgba(59, 7, 100, 0.35);
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), opacity 160ms ease;
+}
+
+.clay-btn-purple:hover {
+  transform: translateY(-2px);
+}
+
+.clay-btn-purple:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Secondary White Clay CTA Button */
+.clay-btn-white {
+  background: linear-gradient(180deg, #ffffff 0%, #f0f5ff 100%);
+  box-shadow:
+    0 12px 24px -4px rgba(96, 135, 255, 0.28),
+    inset 0 3px 6px rgba(255, 255, 255, 0.98),
+    inset 0 -5px 9px rgba(191, 211, 255, 0.65);
+  transition: transform 160ms cubic-bezier(0.16, 1, 0.3, 1), opacity 160ms ease;
+}
+
+.clay-btn-white:hover {
+  transform: translateY(-2px);
+}
+
+.clay-btn-white:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Emoji Pedestal Bubble inside Toy-Box Cards */
+.clay-emoji-pedestal {
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow:
+    0 10px 20px -4px rgba(25, 23, 68, 0.14),
+    inset 0 4px 8px rgba(255, 255, 255, 0.55),
+    inset 0 -4px 8px rgba(25, 23, 68, 0.12);
+}
+
+/* Smooth transition budget <= 200ms on compositor properties */
+.clay-interactive {
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), opacity 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Main Scroll-Snap Container & Section Alignment */
+.clay-scroll-container {
+  scroll-snap-type: y proximity;
+  scroll-padding-top: 5.75rem;
+  scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
+}
+
+@media (min-width: 768px) {
+  .clay-scroll-container {
+    scroll-snap-type: y mandatory;
+  }
+}
+
+.clay-snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+/* Custom Magnetic Clay Cursor Desktop Mode (keeps native text cursor on inputs) */
+@media (pointer: fine) {
+  body[data-clay-cursor='active'],
+  body[data-clay-cursor='active'] a,
+  body[data-clay-cursor='active'] button,
+  body[data-clay-cursor='active'] [role='button'],
+  body[data-clay-cursor='active'] [role='tab'] {
+    cursor: none !important;
+  }
+
+  body[data-clay-cursor='active'] input,
+  body[data-clay-cursor='active'] textarea {
+    cursor: text !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clay-scroll-container {
+    scroll-snap-type: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .clay-interactive,
+  .clay-card-pink,
+  .clay-card-purple,
+  .clay-card-tosca,
+  .clay-btn-purple,
+  .clay-btn-white {
+    transition: none !important;
+    transform: none !important;
+  }
+}
